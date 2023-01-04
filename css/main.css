@@ -1,0 +1,110 @@
+
+* {
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+
+body {
+  background: #eee;
+  font-family: 'Cairo', sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+.layout {
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 90vh;
+  background: #eeeeee8c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.message {
+  background: #fff;
+  padding: 11px 30px;
+  border-radius: 18px;
+  box-shadow: 4px 4px 9px 0px #11111138;
+}
+
+.message h3 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+.message h3.draw {
+  color: #444;
+}
+
+.message h3.win {
+  color: #4caf50;
+}
+
+.message h3.lose {
+  color: #ef000b;
+}
+
+.message i {
+  font-size: 5rem;
+  color: #111;
+}
+
+.message p span {
+  font-weight: bold;
+}
+
+button {
+  background: #4caf50;
+  border: none;
+  outline: none;
+  padding: 3px 24px;
+  border-radius: 10px;
+  color: #fff;
+  font-family: inherit;
+  margin: auto;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.VS {display: flex;justify-content: center;margin-top: 25px;}
+
+.player, .computer {
+  width: 35%;
+}
+
+.player {background: #2196f3;}
+
+.computer {
+  background: #607d8b;
+}
+
+.shapes {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.rock, .paper, .scissors {
+  font-size: 7rem;
+  color: #111;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.rock:hover, .paper:hover, .scissors:hover {
+  color: #4caf50;
+  transform: scale(1.1);
+}
+
+.VS span {
+  color: #eee;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #2f7832;
+}
